@@ -3,4 +3,4 @@ project(operating_system_system_signals C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(operating_system_system_signals main.c)
+add_executable(operating_system_system_signals main.c sin_cos/sincos.c sin_cos/sincos.h)
