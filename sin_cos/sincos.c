@@ -8,10 +8,10 @@
 
 #include "sincos.h"
 
-#define SAMPLING_RATE 1000
+#define SAMPLING_RATE 1000      // the number of signal calls (and so the number of data points)
 
-double data = 0;
-double increment_value = .01;
+double data = 0;                // the starting data value
+double increment_value = .01;   // the value of incrementation for each signal call
 
 void sin_signal_handler(int sig) {
     data += increment_value;
